@@ -1,6 +1,9 @@
-package scaler.springboot2;
+package scaler.springboot2.hello;
 
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 @org.springframework.web.bind.annotation.RestController
 @RequestMapping("/hello")
 public class RestController {

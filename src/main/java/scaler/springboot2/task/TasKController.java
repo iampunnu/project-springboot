@@ -24,11 +24,11 @@ public class TasKController {
     }
     @PostMapping("/{id}")
     Task getTaskById(@PathVariable("id") Integer id){
-        for (Task task:tasks){
+        /*for (Task task:tasks){
             if(task.getId().equals(id)){
                 return task;
             }
-        }
+        }*/
         Task foundlist=tasks.stream().filter(task -> task.getId().equals(id)).findFirst().orElse(null);
         return foundlist;
     }

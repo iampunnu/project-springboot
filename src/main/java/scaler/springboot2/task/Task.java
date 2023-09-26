@@ -5,16 +5,14 @@ import java.util.Date;
 public class Task {
     Integer id;
     String name;
-
+    Date dueDate;
+    Boolean completed;
     public Task(Integer id, String name, Date date, Boolean completed) {
         this.id = id;
         this.name = name;
-        this.date = date;
+        this.dueDate = date;
         this.completed = completed;
     }
-
-    Date date;
-    Boolean completed;
 
     public Integer getId() {
         return id;
@@ -32,12 +30,12 @@ public class Task {
         this.name = name;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getDueDate() {
+        return dueDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDueDate(Date dueDate) {
+        this.dueDate = dueDate;
     }
 
     public Boolean getCompleted() {
@@ -53,7 +51,7 @@ public class Task {
         return "Task{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", date=" + date +
+                ", dueDate=" + dueDate +
                 ", completed=" + completed +
                 '}';
     }
